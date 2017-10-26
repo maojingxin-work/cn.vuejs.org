@@ -275,14 +275,14 @@ example1.items = example1.items.filter(function (item) {
 Vue.set(example1.items, indexOfItem, newValue)
 ```
 ``` js
-// Array.prototype.splice
-example1.items.splice(indexOfItem, 1, newValue)
+example1.items.splice(newLength)
 ```
 
 为了解决第二类问题，你可以使用 `splice`：
 
 ``` js
-example1.items.splice(newLength)
+// Array.prototype.splice
+example1.items.splice(indexOfItem, 1, newValue)
 ```
 
 ## 对象更改检测注意事项
